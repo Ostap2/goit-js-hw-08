@@ -11,12 +11,10 @@ function saveCurrentTime(event) {
     localStorage.setItem('videoplayer-current-time', currentTime);
   }
 
-  window.addEventListener('load', () => {
     const currentTime = localStorage.getItem('videoplayer-current-time');
     if (currentTime) {
       player.setCurrentTime(currentTime);
     }
-  });
   const express = require('express');
 const throttle = require('express-throttle');
 
